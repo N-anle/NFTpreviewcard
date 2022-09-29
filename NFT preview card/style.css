@@ -1,0 +1,192 @@
+:root{
+    --soft-blue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+    
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card:hsl(216,50%,16%);
+    --very-dark-blue-line: hsl(215,32%,27%);
+    --white: hsl(0,0%,100%);
+
+    --fs:1.125rem;
+
+    --ff: 'outfit', 'serif';
+
+    --fw-300: 300;
+    --fw-400:400;
+    --fw-600:600;
+}
+
+/*Resetting the page*/
+*{
+    margin: 0;
+    padding:0;
+}
+/*setting the page font*/
+*{
+    font-family: var(--ff);
+    font-size: var(--fs)
+}
+/*Setting the background colors*/
+*{
+    background-color: var(--very-dark-blue-main);
+    line-height: 1.6;
+}
+
+
+.card{
+    border: 1px solid transparent;
+    width: 250px;
+    height: 450px;
+    box-shadow: 15px 15px 10px var(--very-dark-blue-main);
+    border-radius: 10px;
+}
+
+#image{
+    width: 220px;
+    height: 220px;
+    margin-top: 15px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+/*removing "a" text decoration*/
+a{
+    text-decoration: none;
+    color:var(--white);
+}
+/*positioning of items*/
+.content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: var(--very-dark-blue-card);
+    overflow: hidden;
+}
+
+.content,.image,.text,.price,.time,.remarks, #image,img, h1, p,a {
+    background-color: var(--very-dark-blue-card);
+}
+
+.priceineth, .daysleft, .remarktext{
+    display: inline;
+}
+
+#remarkimg{
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+h1,.explainer{
+    color: var(--white);
+}
+
+#remarkimg{
+    float: left;
+}
+
+/*text styling*/
+
+h1{
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.explainer{
+    font-size: 0.8rem;
+    text-align: left;
+    color: var(--soft-blue) ;
+    font-weight: var(--fw-300);
+}
+
+
+.priceineth{
+    font-size: 0.8rem;
+    color: var(--cyan);
+}
+
+.daysleft{
+    color: var(--soft-blue);
+    font-size: 0.8rem;
+}
+
+.remarks p{
+    color: var(--soft-blue);
+    font-size: .8rem;
+}
+
+.remarks a {
+    font-size: .8rem;
+}
+
+/*inner positions*/
+.remarks{
+    position: relative;
+    top: 10px;
+}
+
+.timeanddate{
+    border: 1px solid transparent;  
+    background-color: var(--very-dark-blue-card);
+    place-items: center stretch;
+}
+
+.time{
+    display: inline;
+    position: relative;
+    left: 60px;
+
+}
+
+.price{
+    display: inline;
+    text-align: left;
+    position: absolute;
+    left: 15px;
+}
+
+.overlay{
+    background-color: var(--cyan);
+    border: 1px solid transparent;
+}
+
+.overlaypic, .overlayimg{
+    background-color: var(--cyan);
+}
+a:hover, h1:hover{
+    color: var(--cyan);
+}
+
+h1:hover, #image:hover{
+    cursor: pointer;
+}
+
+.overlay{
+    position: absolute;
+    top: 13px;
+    left: 13.7px;
+    width: 220px;
+    height: 220px;
+    opacity: 0;
+    border-radius: 10px;
+}
+.overlay:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.overlayimg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+hr{
+    margin-top: 10px;
+}
+.remarks{
+    margin-top: 10px;
+}
+
